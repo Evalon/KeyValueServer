@@ -1,46 +1,50 @@
 ﻿* {
     box-sizing: border-box;
-}
-.page {
+  }
+  .page {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    
+    word-break: break-all;
     flex: 1 1 auto;
-}
-
-.main {
+  }
+  
+  .main {
     max-width: 1400px;
     display: flex;
     flex-flow: column wrap;
     flex: 0 1 auto;
-}
-.main__inputs {
+  }
+  .main__inputs {
     display: flex;
     flex-flow: row wrap;
-    flex: 1 2 auto;
+    flex: 1 1 auto;
     margin-bottom: 20px;
     
-}
-.main__input {
+  }
+  .main__input {
     display: flex;
-    max-width: 80vh;
+    max-width: 100%;
     text-align: center;
-    min-height: 10vh;
+    min-height: 50px;
     flex: 1 1 auto;
     font-size: 1.5rem;
     border: 1px solid rgb(76,175,80);
-}
-.main__actions {
+  }
+  .main__actions {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
     justify-content: space-evenly;
-}
-.button {
+  }
+  .button {
     color: white;
     border: 0;
     font-size: 1rem;
+    text-align: center;
     padding: 10px;
     border-radius: 2px;
     border-bottom: 2px solid rgb(76,175,80);
@@ -51,42 +55,42 @@
     margin: 10px;
     width: 150px;
     will-change: background-position;
-}
-
-.result {
+  }
+  
+  .result {
     border-radius: 2px;
     overflow: hidden;
-}
-
-.result__element {
+  }
+  
+  .result__element {
     display: flex;
     flex-flow: column nowrap;
     padding: 5px;
     border: 1px solid rgb(76,175,80);
-}
-
-.result__readall {
+    word-wrap: break-word;
+  }
+  .result__readall {
     border: 1px solid rgba(76,175,80, 0.25);
     color: #333;
-}
-.actions__transaction_active {
+  }
+  .actions__transaction_active {
     background: linear-gradient(135deg, rgb(76,175,80) -25%, #8dddea, rgb(76,175,80) 125%);
     animation: TransactionActive 6s ease infinite;
     border: 0;
     box-shadow: none;
     background-size: 200% 200%;
-}
-
-@keyframes TransactionActive {
+  }
+  
+  @keyframes TransactionActive {
     0% {
         background-position: 0% 48%
     }
-
+  
     50% {
         background-position: 100% 53%
     }
-
+  
     100% {
         background-position: 0% 48%
     }
-}
+  }
